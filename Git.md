@@ -63,7 +63,7 @@ $ git log
 $ git status
 ```
 
-##  원격 저장소 활용하기
+# 원격 저장소 활용하기
 
 > 여러 서비스 중, [github](https://github.com/)을 기준으로 설명한다.
 
@@ -87,10 +87,22 @@ $ git status
   $ git remote -v
   ```
 
-- 원격 저장소에 파일을 업로드하기
+### 3. 원격 저장소에 파일을 업로드하기
+
+- 파일을 업로드 하는 방법은 다음과 같다.
 
   ```sh
   $ git push origin master
+  ```
+
+  
+
+### 4. 원격 저장소 삭제
+
+- 등록된 원격 저장소를 삭제하려면 아래의 명령어를 참고해야한다.
+
+  ```sh
+  $ git remote rm origin
   ```
 
   
