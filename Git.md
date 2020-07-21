@@ -112,8 +112,3 @@ $ git status
   ```sh
   $ git clone {https:\\url}
   ```
-
-  
-
-  
-
