@@ -111,4 +111,8 @@ $ git status
 
   ```sh
   $ git clone {https:\\url}
+  $ git pull origin master
+# 변경사항을 pull을 통해 업데이트한다.
   ```
+
+
