@@ -107,12 +107,13 @@ $ git status
 
 ### 5. 원하는 로컬 저장소에 다운로드하기
 
--  원격 저장소에서  파일을 다운로드 하기 위해서는 아래의 명령어를 참고해야한다.
+-  Github이나 Gitlab의 원격 저장소에서  파일을 다운로드 하기 위해서는 repo url를 가지고  명령어를 입력해야한다.
 
   ```sh
-  $ git clone {https url}
+  $ git clone {https:\\url}
   ```
 
   
 
   
+
