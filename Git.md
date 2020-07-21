@@ -105,4 +105,14 @@ $ git status
   $ git remote rm origin
   ```
 
+### 5. 원하는 로컬 저장소에 다운로드하기
+
+-  원격 저장소에서  파일을 다운로드 하기 위해서는 아래의 명령어를 참고해야한다.
+
+  ```sh
+  $ git clone {https url}
+  ```
+
+  
+
   
