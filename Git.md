@@ -112,7 +112,13 @@ $ git status
   ```sh
   $ git clone {https:\\url}
   $ git pull origin master
-# 변경사항을 pull을 통해 업데이트한다.
+  ```
+### 6.변경사항을 pull을 통해 업데이트한다.
+
+- 변경이력을 update 하기 위해서 가장 먼저 해야할 일은 원격저장소에 업데이트된 내용을 따라가기 위해서 pull해야한다.
+
+  ```sh
+  $ git pull origin master
   ```
 
-
+  
