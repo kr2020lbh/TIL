@@ -121,4 +121,16 @@ $ git status
   $ git pull origin master
   ```
 
+### 7. Git init 취소
+
+- `rm -r .git` 을 통해서 `.git` 폴더 삭제와 git 로컬 저장소 지정을 해제할 수 있다.
+
+
+
+### 8. Git ignore 파일 무시하고 올리기
+
+- `.gitignore`를 만들고 안에 무시할 파일을 적어놓으면 된다.
+
+  
+
   
