@@ -129,7 +129,7 @@ $ git status
 
 ### 8. Git ignore 파일 무시하고 올리기
 
-- `.gitignore`를 만들고 안에 무시할 파일을 적어놓으면 된다.
+- `git init` 한 곳에 `.gitignore` 를 만들고 안에 무시할 파일을 적어놓으면 된다.
 
   
 
