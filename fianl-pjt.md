@@ -98,10 +98,53 @@
 
 
 
+### 11/23 해야할 것
+
+- 로그인, 회원가입 디자인 금방끝남
+- 검색 suggestion 혹은 검색어 입력 시 어떤 페이지를 보여줄 것인가 (아마도 영화 detail)
+- movie poster  Style 추가 : 마우스 오래 머무르면 poster 확대 되면서 영화 상세정보 간략히 보여주기
+
+
+
+### 11/23 새로 사용한 것
+
+
+
+### 11/23 발생한 문제
+
+```html
+window.location.href=`http://localhost:8080/movie_detail?movie_title=${inputValue}`
+this.$router.push({name : 'movie_detail', query : {movie_title :inputValue}})
+```
+
+라우터는 같은 페이지에서 이동이 안된다. 그래서 a태그 처럼 이동시켜버렸다
+
+
+
+### 11/24 해야할 것
+
+- movie review detail볼 때 밑에 글 목록 보여주기
+- 영화 카드에 대한 CSS -> 마우스 오래 머무르면 세부정보 보여주거나 새로운 페이지
+- 내 정보 페이지
+- 영화정보 더 보여주기 (배우 , 대사)
+
+
+
+### 11/24 새로 사용한 것
+
+- 네이버 영화 API 영화 정보
+
+  ![image-20201124125755110](fianl-pjt.assets/image-20201124125755110.png)
+
+  위의 사진 처럼 네이버 영화 정보 사이트의 html요소를 가져오는 방법을 통해서 배우 사진을 가져왔다.
+
+### 11/24 발생한 문제
+
+- movie review detail볼 때 밑에 글 목록 보여줄 때 router의 특성상 클릭했을 때 새로고침이 안되기 때문에 정보 업데이트가 되지 않았다. 그래서 새로고침으로 바꿈
+- scroll event 에서 window.scrollY 의 값이 화면의 크기에 따라 달라질 수 있다.
+
+
+
 ### 앞으로 해야할 것
 
-- 영화 카드에 대한 CSS
-- 검색 기능 -> 검색을 눌렀을 때 어떻게 할 것인가
-- 내 정보 페이지
-- 이미지 혹은 동영상에 window의 scroll event에 따라서 opcaity 변화
-
+- 글 목록 밑에 글 검색 bar
