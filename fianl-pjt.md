@@ -137,14 +137,41 @@ this.$router.push({name : 'movie_detail', query : {movie_title :inputValue}})
   ![image-20201124125755110](fianl-pjt.assets/image-20201124125755110.png)
 
   위의 사진 처럼 네이버 영화 정보 사이트의 html요소를 가져오는 방법을 통해서 배우 사진을 가져왔다.
+  
+  
 
 ### 11/24 발생한 문제
 
-- movie review detail볼 때 밑에 글 목록 보여줄 때 router의 특성상 클릭했을 때 새로고침이 안되기 때문에 정보 업데이트가 되지 않았다. 그래서 새로고침으로 바꿈
+- movie review detail볼 때 밑에 글 목록 보여줄 때 router의 특성상 클릭했을 때 새로고침이 안되기 때문에 정보 업데이트가 되지 않았다. 그래서 새로고침으로 바꿈 -> async await를 사용해보자
+
 - scroll event 에서 window.scrollY 의 값이 화면의 크기에 따라 달라질 수 있다.
 
+- 첫 번째 문제와 마찬가지로 로그인 후 추천 영화를 보여줄 때, 로컬저장소에 저장된 정보를 불러와 그 정보를 토대로 추천해야하는데 이 정보가 동기적으로 처리가 되지 않아 문제가 있었다. 그래서  밑의 형식으로 함수를 변경했다. ---> 안된듯??
 
+  ```html
+  getFavoriteGenre () {
+  	return JSON.parse(localStorage.getItem('favorite_genres'))
+  },
+  async fetchData() {
+  	return await this.getFavoriteGenre()
+  }
+  created () {
+      this.genre = this.fetchData()
+      this.getRecommend()
+      this.infiniteHandler()
+  }
+  ```
 
-### 앞으로 해야할 것
+  
 
-- 글 목록 밑에 글 검색 bar
+### 11/25 해야할 것
+
+- 관리자 계정 관리자 페이지
+- 검색시 클릭으로 페이지 전환, 검색 목록 보면 마우스 커서 손가락으로 바꾸기
+- 영화 명대사 옆에 배우 이름
+- 글 세부정보 볼때 최소높이 80vh 설정해서 밑에 글 목록이 바로 안보이게 하기
+- 글 작성할 때 별 선택되는 색깔만 좀 밝게
+
+- infinite scroll loader 가운데로 오게 하기, 스케일 업 시키기
+- 내 정보 ( 내가 쓴 글)
+
