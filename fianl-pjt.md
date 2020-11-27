@@ -175,3 +175,14 @@ this.$router.push({name : 'movie_detail', query : {movie_title :inputValue}})
 - infinite scroll loader 가운데로 오게 하기, 스케일 업 시키기
 - 내 정보 ( 내가 쓴 글)
 
+
+
+### 11/25 새로 사용한 것
+
+- 스크롤 부드럽게 맨 위로 올라가기
+
+  ```html
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  ```
+
+- 
